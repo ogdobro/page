@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: absolute; /* изменено */
+  top: 0; /* изменено */
+  left: 0; /* изменено */
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  position: relative; /* изменено */
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.prev,
+.next {
+  position: absolute; /* изменено */
+  top: 50%; /* изменено */
+  transform: translateY(-50%); /* изменено */
+  z-index: 1;
+}
+
+.prev {
+  left: 10px; /* изменено */
+}
+
+.next {
+  right: 10px; /* изменено */
+}
